@@ -1,0 +1,17 @@
+{
+  "name": "arto-landing-page",
+  "version": "1.0.0",
+  "description": "Demo estática de ARTO Café de Especialidad, Rosario.",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "preview": "node scripts/dev.mjs",
+    "check": "node --check dist/script.js",
+    "check:layout": "node scripts/check-layout.mjs"
+  }
+}
