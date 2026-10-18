@@ -1,0 +1,23 @@
+# Local backups, browser profiles and generated verification artifacts.
+/.local-backup/
+/.chrome-preview-*/
+/preview-*.png
+/layout-debug*.txt
+/arto-site.tar.gz
+
+# Machine-specific settings and the retained local Sites identity.
+/.vscode/
+/.openai/
+/design-archive/
+
+# Dependencies, logs and local environment files.
+node_modules/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# dist/ is the source of this static site: it MUST be committed.

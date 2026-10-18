@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4e220f" />
+    <meta name="description" content="ARTO Café de Especialidad. Café, pastelería y formación en Tucumán 1932, Rosario. Conocé nuestra propuesta y los cursos de barista." />
+    <title>ARTO — Café de especialidad y formación en Rosario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <!-- Phosphor Icons Regular · MIT · assets/PHOSPHOR-LICENSE.txt -->
+    <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <symbol id="icon-map-pin" viewBox="0 0 256 256"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z" /></symbol>
+      <symbol id="icon-clock" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z" /></symbol>
+      <symbol id="icon-book-open" viewBox="0 0 256 256"><path d="M232,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H24a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h72a8,8,0,0,0,8-8V56A8,8,0,0,0,232,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z" /></symbol>
+      <symbol id="icon-caret-down" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z" /></symbol>
+      <symbol id="icon-arrow-up-right" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z" /></symbol>
+      <symbol id="icon-instagram" viewBox="0 0 256 256"><rect x="32" y="32" width="192" height="192" rx="48" fill="none" stroke="currentColor" stroke-width="16" /><circle cx="128" cy="128" r="40" fill="none" stroke="currentColor" stroke-width="16" /><circle cx="180" cy="76" r="12" /></symbol>
+      <symbol id="icon-whatsapp" viewBox="0 0 256 256"><path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z" /></symbol>
+      <symbol id="icon-calendar" viewBox="0 0 256 256"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Z" /></symbol>
+    </svg>
+    <header class="site-header">
+      <div class="header-inner page-width">
+        <div class="header-identity">
+          <a class="brand" href="#inicio" aria-label="ARTO, inicio"><span class="brand-word">ARTO</span><span class="brand-caption">Café de especialidad</span></a>
+          <a class="header-address" href="https://www.google.com/maps/dir/?api=1&amp;destination=-32.9396586,-60.6484924" target="_blank" rel="noreferrer"><svg class="icon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-map-pin"></use></svg><span>Tucumán 1932<span class="address-locality">Rosario, Santa Fe</span></span></a>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menú</button>
+        <nav class="navigation" id="navigation" aria-label="Navegación principal">
+          <a href="#cafe">La casa</a><a href="#cursos">Cursos</a><a href="#visitanos">Visitanos</a>
+          <a class="navigation-menu" href="https://linktr.ee/artocafe" target="_blank" rel="noreferrer"><svg class="icon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-book-open"></use></svg><span>Ver carta</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="contenido">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-inner page-width">
+          <div class="hero-copy">
+            <p class="micro hero-eyebrow">ARTO · Café de especialidad en Rosario</p>
+            <h1 id="hero-title">Buen café.<br /><em>Buenos ratos.</em></h1>
+            <p class="hero-description">Café, comida y un lugar para hacer una pausa.<br class="desktop-break" /> Y si te da curiosidad, también para aprender.</p>
+            <div class="hero-actions">
+              <a class="button button-dark" href="https://linktr.ee/artocafe" target="_blank" rel="noreferrer"><span>Conocé nuestra carta</span><svg class="icon icon-external" width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-arrow-up-right"></use></svg></a>
+              <a class="text-link" href="#cursos"><span>Quiero aprender</span><svg class="icon icon-external" width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-arrow-up-right"></use></svg></a>
+            </div>
+          </div>
+          <div class="hero-scene motion-scene" role="img" aria-label="Escena ilustrada de ARTO: una cafetera italiana, un café para llevar, un filtro de café y una rama de cafeto">
+            <div class="scene-paper" aria-hidden="true"></div>
+            <div class="hero-branch parallax-layer" data-depth="-15"><span class="coffee-art art-branch sway" aria-hidden="true"></span></div>
+            <div class="hero-moka parallax-layer" data-depth="12"><span class="coffee-art art-moka float-slow" aria-hidden="true"></span></div>
+            <div class="hero-filter parallax-layer" data-depth="-9"><span class="coffee-art art-filter float-slow float-delay" aria-hidden="true"></span></div>
+            <div class="hero-cup parallax-layer" data-depth="20"><span class="coffee-art art-cup float-slow float-late" aria-hidden="true"></span></div>
+            <svg class="hero-steam steam-lines" viewBox="0 0 100 100" aria-hidden="true"><path d="M33 82C12 56 54 39 31 14M65 84C45 60 83 43 64 23" /></svg>
+            <span class="scene-note" aria-hidden="true">La pausa está servida.</span>
+          </div>
+          <div class="hero-bottom">
+            <a class="hero-scroll" href="#cafe"><svg class="icon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-caret-down"></use></svg><span>Sentite como en casa</span></a>
+            <button class="motion-toggle" type="button" aria-pressed="false"><span class="motion-indicator" aria-hidden="true"></span><span class="motion-toggle-label">Pausar movimiento</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro page-width section-space" id="cafe" aria-labelledby="intro-title">
+        <p class="section-label micro">La casa</p>
+        <div class="intro-heading"><h2 id="intro-title">Tomate<br /><em>un buen rato.</em></h2></div>
+        <div class="intro-copy">
+          <p>Nos encontrás en Tucumán 1932. Café de especialidad, algo rico para acompañar y una mesa para quedarte un rato.</p>
+          <p>Podés venir por tu café de todos los días o descubrir uno nuevo. La conversación empieza en la barra.</p>
+          <a class="text-link" href="https://www.instagram.com/artocafe" target="_blank" rel="noreferrer"><svg class="icon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-instagram"></use></svg><span>Conocenos en Instagram</span></a>
+        </div>
+        <div class="house-story motion-scene">
+          <img class="house-still-life parallax-layer" data-depth="-22" src="assets/arto-hero-art.png" alt="Composición de café con latte art, granos y una bolsa de café sobre una mesa cálida" width="1774" height="887" loading="lazy" decoding="async" />
+          <div class="house-story-copy"><p class="micro">Lo simple, bien hecho.</p><p class="house-story-title">De la barra<br /><em>a tu mesa.</em></p><span>Café de especialidad. A tu ritmo.</span></div>
+          <svg class="house-light parallax-layer" data-depth="24" viewBox="0 0 1000 400" aria-hidden="true"><path d="M0 44L390 0L0 199ZM0 232L505 0L358 0L0 111Z" /></svg>
+        </div>
+        <div class="menu-editorial">
+          <article><span class="menu-flourish" aria-hidden="true"></span><div><h3>Para tomar.</h3><p>Espresso, cappuccino y métodos filtrados. Tu manera de disfrutar el café.</p></div></article>
+          <article><span class="menu-flourish menu-flourish-sage" aria-hidden="true"></span><div><h3>Para acompañar.</h3><p>Pastelería, tostadas, desayunos y meriendas. Siempre hay una buena excusa.</p></div></article>
+        </div>
+      </section>
+
+      <section class="venue" aria-labelledby="venue-title">
+        <figure class="venue-photograph">
+          <div class="photograph-fallback" aria-hidden="true">
+            <span class="micro">Tucumán 1932 · Rosario</span>
+            <span class="fallback-wordmark">ARTO</span>
+            <span class="micro">Café de especialidad</span>
+          </div>
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/f7/63/e4/photo2jpg.jpg?w=1600&amp;q=85" alt="Interior de ARTO, con techo abovedado, ladrillo a la vista y su cartel de café de especialidad" width="1200" height="900" loading="lazy" data-remote-photo />
+        </figure>
+        <div class="venue-copy">
+          <p class="micro">Pasá. Estás en ARTO.</p>
+          <h2 id="venue-title">El café<br />nos reúne.</h2>
+          <p class="venue-handwritten" aria-hidden="true">Quedate un ratito.</p>
+          <div class="venue-copy-bottom">
+            <p>Una charla, una merienda, un encuentro. Lo que pasa alrededor de la taza también importa.</p>
+            <a class="text-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=-32.9396586,-60.6484924" target="_blank" rel="noreferrer"><svg class="icon" width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-map-pin"></use></svg><span>Vení a conocernos</span></a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="courses section-space" id="cursos" aria-labelledby="courses-title">
+        <div class="page-width">
+          <div class="courses-heading">
+            <p class="section-label micro">Formación ARTO</p>
+            <h2 id="courses-title">El café también<br /><em>se aprende.</em></h2>
+            <div class="courses-intro">
+              <p>De la curiosidad a la práctica. Cursos y talleres para empezar en el mundo del café o seguir explorándolo.</p>
+              <p class="small-copy">Consultá las próximas ediciones, los contenidos y la disponibilidad de cada capacitación.</p>
+            </div>
+          </div>
+          <div class="course-experience">
+            <nav class="course-tabs" aria-label="Explorá las capacitaciones">
+              <a class="course-tab" id="tab-barista" href="#programa-barista">Barista inicial<svg class="icon icon-tab" width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-arrow-up-right"></use></svg></a>
+              <a class="course-tab" id="tab-latte" href="#programa-latte">Latte art<svg class="icon icon-tab" width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-arrow-up-right"></use></svg></a>
+              <a class="course-tab" id="tab-metodos" href="#programa-metodos">Métodos<svg class="icon icon-tab" width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-arrow-up-right"></use></svg></a>
+            </nav>
+            <article class="course-panel motion-scene" id="programa-barista" aria-labelledby="tab-barista">
+              <div class="course-visual"><svg class="brewing-art" viewBox="0 0 560 400" aria-hidden="true" focusable="false">
+<path class="scene-ground" d="M60 348C33 244 80 84 231 57C405 24 503 118 504 246L476 353Z" />
+<g class="drawn">
+<path class="fill-caramel" d="M104 73L410 69L417 135L107 140Z" />
+<path class="fill-sage" d="M109 140L164 139L167 298L410 296L415 336L104 338Z" />
+<path class="fill-cream" d="M166 143L395 137L393 171L166 176Z" />
+<path d="M188 113H255M188 99H232" />
+<circle class="fill-cream" cx="363" cy="104" r="19" /><path d="M363 104L372 94" />
+<path class="fill-espresso" d="M221 174L290 172L290 193L223 195Z" />
+<path class="fill-caramel" d="M287 178L366 175L369 189L289 193Z" />
+<path class="coffee-stream" d="M241 195V253M268 195V253" />
+<ellipse class="fill-cream" cx="262" cy="303" rx="93" ry="12" />
+<path class="fill-sage" d="M310 252C367 243 363 290 318 289L314 276C344 279 346 257 310 265Z" />
+<path class="fill-cream" d="M206 249L318 247L312 283Q307 306 266 308Q219 309 213 283Z" />
+<ellipse class="fill-caramel" cx="262" cy="250" rx="55" ry="10" />
+<path d="M114 322H392M124 309H153M114 92L116 124" />
+</g>
+<g class="steam-lines"><path d="M235 232C220 216 245 207 234 193" /><path d="M286 233C274 219 294 211 288 200" /></g>
+<path class="scene-pencil" d="M78 363C176 355 349 363 476 355M82 370L166 367" />
+</svg><p class="course-visual-note">Molienda, extracción y práctica.</p></div>
+              <div class="course-narrative">
+                <p class="micro">El primer paso</p>
+                <h3>Tu primer<br /><em>buen espresso.</em></h3>
+                <p class="course-description">Un acercamiento al café de especialidad y a los fundamentos del trabajo en barra. Para quienes quieren empezar desde cero.</p>
+                <p class="course-topics">Del <strong>origen del café</strong> a la taza: molienda, extracción de espresso, leche y fundamentos de barra.</p>
+                <a class="button button-dark" href="https://wa.me/5493413920052?text=Hola%20ARTO%2C%20quiero%20consultar%20por%20el%20curso%20de%20Barista%20Inicial" target="_blank" rel="noreferrer"><svg class="icon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-calendar"></use></svg><span>Consultar próximas fechas</span></a>
+              </div>
+            </article>
+            <article class="course-panel motion-scene" id="programa-latte" aria-labelledby="tab-latte">
+              <div class="course-visual"><svg class="brewing-art" viewBox="0 0 560 400" aria-hidden="true" focusable="false">
+<path class="scene-ground" d="M75 345L56 197C91 58 250 47 398 88C491 114 509 245 463 347Z" />
+<g class="drawn">
+<ellipse class="fill-cream" cx="263" cy="326" rx="160" ry="28" />
+<path class="fill-caramel" d="M374 250C447 215 462 299 383 307L378 286C429 285 424 245 380 270Z" />
+<path class="fill-cream" d="M141 253Q148 329 260 334Q366 331 384 254Z" />
+<ellipse class="fill-caramel" cx="263" cy="253" rx="122" ry="55" />
+<ellipse class="latte-ring" cx="263" cy="253" rx="101" ry="42" />
+<g class="latte-heart"><path class="milk-shape" d="M263 276C243 260 213 248 223 231C237 210 261 226 264 238C269 211 302 215 305 235C308 251 281 266 263 276Z" /><path class="milk-stem" d="M265 238L258 285" /></g>
+<g class="milk-pitcher">
+<path class="fill-espresso" d="M395 70C445 51 475 92 444 129L426 120C448 97 434 80 404 89Z" />
+<path class="fill-sage" d="M310 52L422 72L405 154Q353 181 327 149L307 108L280 97L311 91Z" />
+<path d="M329 76L337 131M346 150L385 151" />
+<path class="fill-cream" d="M306 53Q365 28 422 72Q370 95 306 53Z" />
+</g>
+<path class="milk-stream" d="M308 109C286 137 265 176 264 222" />
+</g>
+<path class="scene-pencil" d="M88 365L447 358M111 372L182 369" />
+</svg><p class="course-visual-note">Leche, pulso y una buena taza.</p></div>
+              <div class="course-narrative">
+                <p class="micro">Técnica en la taza</p>
+                <h3>La técnica<br /><em>toma forma.</em></h3>
+                <p class="course-description">Una invitación a trabajar la leche y el vertido. Conocé los principios que hay detrás de cada dibujo en la taza.</p>
+                <p class="course-topics">Explorá la <strong>texturización de la leche</strong>, la microespuma y su consistencia, para dar paso a las técnicas de vertido.</p>
+                <a class="button button-dark" href="https://wa.me/5493413920052?text=Hola%20ARTO%2C%20quiero%20consultar%20por%20el%20taller%20de%20Latte%20Art" target="_blank" rel="noreferrer"><svg class="icon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-whatsapp"></use></svg><span>Consultar por el taller</span></a>
+              </div>
+            </article>
+            <article class="course-panel motion-scene" id="programa-metodos" aria-labelledby="tab-metodos">
+              <div class="course-visual"><svg class="brewing-art" viewBox="0 0 560 400" aria-hidden="true" focusable="false">
+<path class="scene-ground" d="M71 349C34 267 42 102 190 67C344 22 499 84 501 232L478 351Z" />
+<g class="drawn">
+<path class="fill-cream" d="M268 237L359 237L366 261Q430 322 362 343L262 344Q202 331 252 271Z" />
+<path class="fill-caramel" d="M248 300Q310 316 379 298Q401 339 346 342L270 342Q230 337 248 300Z" />
+<path class="fill-sage" d="M371 270C430 253 450 325 388 327L385 313C425 310 410 277 377 286Z" />
+<path class="fill-caramel" d="M235 220L390 220L382 234L242 237Z" />
+<path class="fill-sage" d="M233 134L394 135L346 220L283 221Z" />
+<path class="fill-cream" d="M232 134L247 119L264 125L280 116L300 124L322 116L343 125L367 120L395 135L373 146L353 142L332 149L309 142L288 149L268 141L249 146Z" />
+<path d="M264 155L292 208M296 156L309 209M335 155L328 208M368 155L341 208" />
+<g class="pour-kettle">
+<path class="fill-espresso" d="M101 93C46 60 38 126 93 147L102 130C68 117 67 88 99 108Z" />
+<path class="fill-caramel" d="M95 89L204 66L226 133Q182 171 112 153Z" />
+<path class="fill-cream" d="M95 89L116 67L179 54L204 66Z" />
+<path d="M145 58L142 43L160 39L164 54" />
+<path class="fill-caramel" d="M214 96Q260 108 271 76Q284 44 311 75L300 85Q284 66 284 90Q275 132 224 127Z" />
+<path d="M126 98L135 134" />
+</g>
+<path class="water-stream" d="M306 83Q323 98 320 125" />
+<path class="coffee-stream" d="M316 237V263" />
+</g>
+<path class="scene-pencil" d="M92 365L467 358M113 372L195 369" />
+</svg><p class="course-visual-note">Tiempo, agua y proporciones.</p></div>
+              <div class="course-narrative">
+                <p class="micro">Otras formas de preparar</p>
+                <h3>Otra receta.<br /><em>Otro descubrimiento.</em></h3>
+                <p class="course-description">Explorá la preparación manual y las variables que transforman una receta. Otra forma de conocer el café que tomás.</p>
+                <p class="course-topics">Descubrí cómo la <strong>molienda y las proporciones</strong>, el tiempo y la temperatura se encuentran en cada receta de extracción.</p>
+                <a class="button button-dark" href="https://wa.me/5493413920052?text=Hola%20ARTO%2C%20quiero%20consultar%20por%20los%20talleres%20de%20m%C3%A9todos" target="_blank" rel="noreferrer"><svg class="icon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-whatsapp"></use></svg><span>Consultar por el taller</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="courses-footnote"><p>¿No sabés por dónde empezar?<br /><span>Contanos qué te gustaría aprender.</span></p><a class="text-link" href="https://wa.me/5493413920052?text=Hola%20ARTO%2C%20me%20gustar%C3%ADa%20que%20me%20recomienden%20un%20curso" target="_blank" rel="noreferrer"><svg class="icon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-whatsapp"></use></svg><span>Hablemos de cursos</span></a></div>
+        </div>
+      </section>
+      <section class="questions page-width section-space" id="preguntas" aria-labelledby="questions-title">
+        <div class="questions-heading"><p class="micro">Antes de venir</p><h2 id="questions-title">Una cosa más.</h2></div>
+        <div class="questions-list">
+          <details>
+            <summary>¿Necesito experiencia para hacer un curso?<span class="question-action"><span class="question-action-label">Leer respuesta</span><svg class="icon icon-disclosure" width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-caret-down"></use></svg></span></summary>
+            <p>El curso inicial está pensado para quienes quieren comenzar. Para las demás capacitaciones, escribinos y te orientamos según tu experiencia.</p>
+          </details>
+          <details>
+            <summary>¿Cómo me entero de las próximas fechas?<span class="question-action"><span class="question-action-label">Leer respuesta</span><svg class="icon icon-disclosure" width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-caret-down"></use></svg></span></summary>
+            <p>Encontrás las convocatorias en <a href="https://www.instagram.com/artocafe" target="_blank" rel="noreferrer">@artocafe</a>. También podés <a href="https://wa.me/5493413920052" target="_blank" rel="noreferrer">consultarnos por WhatsApp</a> por nuevas ediciones y disponibilidad.</p>
+          </details>
+          <details>
+            <summary>¿Puedo pedir mi café para llevar?<span class="question-action"><span class="question-action-label">Leer respuesta</span><svg class="icon icon-disclosure" width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-caret-down"></use></svg></span></summary>
+            <p>Sí. Pasá por Tucumán 1932 y pedí tu café para llevar en la barra.</p>
+          </details>
+        </div>
+      </section>
+
+
+      <section class="contact section-space" id="visitanos" aria-labelledby="contact-title">
+        <div class="page-width">
+          <div class="contact-heading">
+            <div class="contact-invitation"><p class="micro">Tu próxima pausa</p><h2 id="contact-title">Nos vemos<br /><em>en ARTO.</em></h2><div class="contact-actions"><a class="button button-cream" href="https://www.google.com/maps/dir/?api=1&amp;destination=-32.9396586,-60.6484924" target="_blank" rel="noreferrer"><svg class="icon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-map-pin"></use></svg><span>Cómo llegar</span></a><a class="text-link" href="https://wa.me/5493413920052" target="_blank" rel="noreferrer"><span>Escribinos</span><svg class="icon icon-external" width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-arrow-up-right"></use></svg></a></div></div>
+            <div class="contact-art motion-scene" aria-hidden="true"><div class="contact-art-branch"><span class="coffee-art art-branch sway" aria-hidden="true"></span></div><div class="contact-art-cup"><span class="coffee-art art-cup float-slow" aria-hidden="true"></span></div><span>Siempre hay<br /><em>un buen motivo.</em></span></div>
+          </div>
+          <div class="contact-information">
+            <div><p class="micro contact-label"><svg class="icon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-map-pin"></use></svg><span>Dónde estamos</span></p><address>Tucumán 1932<br /><span class="address-city">Rosario, Santa Fe</span></address></div>
+            <div><p class="micro contact-label"><svg class="icon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-clock"></use></svg><span>Horarios</span></p><dl class="opening-hours"><div><dt>Lunes a viernes</dt><dd>8:30–13:00 / 16:00–20:30</dd></div><div><dt>Sábados y domingos</dt><dd>9:00–13:00 / 17:00–20:30</dd></div></dl><p class="hours-note">Consultá en Instagram los cambios de horario y feriados.</p></div>
+            <div class="contact-social"><p class="micro">Seguimos en contacto</p><a href="https://www.instagram.com/artocafe" target="_blank" rel="noreferrer"><svg class="icon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-instagram"></use></svg><span>@artocafe</span></a><a href="https://wa.me/5493413920052" target="_blank" rel="noreferrer"><svg class="icon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-whatsapp"></use></svg><span>WhatsApp</span></a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer-inner page-width"><a class="brand" href="#inicio" aria-label="ARTO, volver al inicio"><span class="brand-word">ARTO</span><span class="brand-caption">Café de especialidad</span></a><p>De Rosario. Para tu buen rato.</p><a class="text-link" href="#inicio"><span>Volver arriba</span><svg class="icon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#icon-arrow-up-right"></use></svg></a></div></footer>
+  </body>
+</html>
